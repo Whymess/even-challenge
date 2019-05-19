@@ -1,0 +1,11 @@
+.submit {
+    color: white;
+    background-color: #3F87C7;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    width: 12em;
+    margin: 0 auto;
+    display: block;
+    height: 3em;
+}

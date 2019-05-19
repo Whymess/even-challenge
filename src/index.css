@@ -1,0 +1,25 @@
+body {
+	height: 100%;
+}
+
+.title-input {
+	font-weight: lighter;
+	font-size: .5em;
+}
+
+.input-search-form {
+	margin: 0 auto;
+	display: block;
+	border: .5px solid black; 
+}
+
+.error {
+	margin: 0 auto;
+	display: block;
+	border: .5px solid firebrick; 
+}
+
+.error-text {
+	font-size: 10px;
+	color: firebrick;
+}

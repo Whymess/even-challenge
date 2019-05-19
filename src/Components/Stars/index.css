@@ -1,0 +1,15 @@
+#header-instructions {
+	color: #F1542B;
+}
+
+#input-instructions {
+	position: relative;
+    margin-left: 1em;
+}
+
+.number-input {
+	width: 3em;
+	margin-left: 1em;
+	margin-right: 1em;
+	outline: none;
+}

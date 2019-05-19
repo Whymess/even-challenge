@@ -1,0 +1,13 @@
+.title {
+	text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.main {
+	min-height: calc(100vh - 70px);
+}
+.instructions {
+	text-align: center;
+	
+}

@@ -1,0 +1,14 @@
+.title {
+	color: #3F87C7;
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+.desc {
+	color: black;
+	font-size: .9em;
+}
+
+.result-text {
+	display: block;
+}

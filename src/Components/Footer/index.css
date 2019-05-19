@@ -1,0 +1,17 @@
+.footer {
+  background-color: #3F87C7;
+  color: white;
+  text-align: center;
+  height: 2em;
+}
+
+
+.footer-text {
+	font-size: 12px;
+	margin-top: 0px;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
