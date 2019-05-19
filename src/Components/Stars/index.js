@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 // local dependencies
 import "./index.css";
-
 import { checkArray } from "../Helpers/";
 
 export default class StarsInput extends Component {
@@ -112,3 +112,12 @@ export default class StarsInput extends Component {
 		);
 	}
 }
+
+StarsInput.propTypes = {
+	handleStarChange: PropTypes.func.isRequired,
+	atLeast: PropTypes.string.isRequired,
+	range: PropTypes.array.isRequired,
+	exact: PropTypes.string.isRequired,
+	error: PropTypes.bool.isRequired,
+	onFocus: PropTypes.func.isRequired
+};
