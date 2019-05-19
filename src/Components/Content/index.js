@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // local dependencies
 import "./index.css";
 
-export default props => {
+const Content = props => {
 	let { license, stargazers_count, description, name } = props;
 	return (
 		<div className="container border mt-4">
@@ -28,3 +29,12 @@ export default props => {
 		</div>
 	);
 };
+
+Content.propTypes = {
+	name: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
+	stargazers_count: PropTypes.string.isRequired,
+	license: PropTypes.object.isRequired
+};
+
+export default Content;
