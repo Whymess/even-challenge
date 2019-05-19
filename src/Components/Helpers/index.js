@@ -15,6 +15,9 @@ function checkArray(range) {
 }
 
 function checkRangeOrder(range) {
+	if (range.length === 0) {
+		return false;
+	}
 	if (range[0] <= range[1]) {
 		return false;
 	} else {
