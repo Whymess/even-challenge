@@ -70,12 +70,12 @@ export default class Application extends Component {
 	handleSubmit = evt => {
 		let resultFromCanBeSubmitted = this.canBeSubmitted();
 		let { isDisabled } = resultFromCanBeSubmitted;
-		let { LisenceAgreement, repoName, range } = resultFromCanBeSubmitted.errors;
+		let { lisenceAgreement, repoName, range } = resultFromCanBeSubmitted.errors;
 		if (isDisabled) {
 			this.setState({
 				errors: {
 					...this.state.errors,
-					ErrorForLicenseInput: LisenceAgreement,
+					ErrorForLicenseInput: lisenceAgreement,
 					ErrorForRepoName: repoName,
 					ErrorForRange: range
 				}
