@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
@@ -6,14 +7,14 @@ import Checkbox from "@material-ui/core/Checkbox";
 //local dependencies
 import "./index.css";
 
-export default props => {
-	let { title, handleChangeForkedCheckedBox, includeForked } = props;
+const ForkedCheckedBox = props => {
+	let { title, handleChangeForkedCheckedBox, checked } = props;
 	return (
 		<FormGroup className="checked-box-styles-forked">
 			<FormControlLabel
 				control={
 					<Checkbox
-						checked={includeForked}
+						checked={checked}
 						onChange={handleChangeForkedCheckedBox("fork")}
 					/>
 				}
@@ -21,4 +22,11 @@ export default props => {
 			/>
 		</FormGroup>
 	);
+};
+
+export default ForkedCheckedBox;
+
+ForkedCheckedBox.propTypes = {
+	title: PropTypes.string.isRequired,
+	checked: PropTypes.bool.isRequired
 };

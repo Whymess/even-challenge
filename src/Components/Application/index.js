@@ -23,7 +23,7 @@ export default class Application extends Component {
 			atLeast: ""
 		},
 		repoName: "",
-		IncludeFork: "",
+		IncludeFork: false,
 		lisenceAgreement: "",
 		isLoading: false,
 		data: "",
