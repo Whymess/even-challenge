@@ -15,10 +15,10 @@ function checkArray(range) {
 }
 
 function checkRangeOrder(range) {
-	if (range[0] < range[1]) {
-		return true;
-	} else {
+	if (range[0] <= range[1]) {
 		return false;
+	} else {
+		return true;
 	}
 }
 

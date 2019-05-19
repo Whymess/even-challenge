@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //local dependencies
 import "./index.css";
 
-export default props => {
+const SearchButton = props => {
 	let { title, handleSubmit, isLoading } = props;
 	return (
 		<button
@@ -15,4 +16,12 @@ export default props => {
 			{title}
 		</button>
 	);
+};
+
+export default SearchButton;
+
+SearchButton.propTypes = {
+	title: PropTypes.string.isRequired,
+	handleSubmit: PropTypes.func.isRequired,
+	isLoading: PropTypes.bool.isRequired
 };

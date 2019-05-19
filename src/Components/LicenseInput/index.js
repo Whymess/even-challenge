@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // local dependencies
 import "./index.css";
 
-export default props => {
+const LicenseInput = props => {
 	let { title, handleChange, onFocus, error, errorMessage } = props;
 	return (
 		<div className="form-group ">
@@ -22,4 +23,14 @@ export default props => {
 			{error ? <label className="error-text"> {errorMessage}</label> : ""}
 		</div>
 	);
+};
+
+export default LicenseInput;
+
+LicenseInput.propTypes = {
+	title: PropTypes.string.isRequired,
+	handleChange: PropTypes.func.isRequired,
+	onFocus: PropTypes.func.isRequired,
+	error: PropTypes.bool.isRequired,
+	errorMessage: PropTypes.string.isRequired
 };

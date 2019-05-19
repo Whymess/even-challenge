@@ -260,7 +260,7 @@ export default class Application extends Component {
 					{isLoading ? <Loader /> : ""}
 					{errorMessage ? (
 						<h1 style={{ color: "firebrick", textAlign: "center" }}>
-							ERROR: {errorMessage}. Please try again{" "}
+							ERROR: {errorMessage}. Please try again
 						</h1>
 					) : (
 						""
