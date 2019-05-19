@@ -71,7 +71,6 @@ export default class Application extends Component {
 		let resultFromCanBeSubmitted = this.canBeSubmitted();
 		let { isDisabled } = resultFromCanBeSubmitted;
 		let { LisenceAgreement, repoName, range } = resultFromCanBeSubmitted.errors;
-
 		if (isDisabled) {
 			this.setState({
 				errors: {

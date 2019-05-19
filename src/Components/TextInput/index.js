@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default props => {
+const TextInput = props => {
 	let { title, handleChange, onFocus, error, errorMessage } = props;
 	return (
 		<div className="form-group ">
@@ -22,3 +23,12 @@ export default props => {
 		</div>
 	);
 };
+
+TextInput.propTypes = {
+	title: PropTypes.string.isRequired,
+	onFocus: PropTypes.func.isRequired,
+	errorMessage: PropTypes.string.isRequired,
+	error: PropTypes.bool.isRequired
+};
+
+export default TextInput;
