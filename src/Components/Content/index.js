@@ -4,14 +4,30 @@ import React from "react";
 import "./index.css";
 
 export default props => {
-	let { license, stargazers_count, description, name } = props;
+	let { license, stargazers_count, description, name, fork } = props;
+	console.log(fork === true);
 	return (
 		<div className="container border mt-4">
 			<div className="row">
 				<div className="col-lg-8">
 					<div className="row">
 						<div className="col">
-							<h4 className="title">{name}</h4>
+							<div className="d-flex">
+								<div className="col-lg-10">
+									<h4 className="title d-flex justify-content-center">
+										{name}
+									</h4>
+								</div>
+								{fork ? (
+									<div className="col-lg-2 d-flex flex-row-reverse">
+										<button className="forked-button">
+											Forked
+										</button>
+									</div>
+								) : (
+									""
+								)}
+							</div>
 							<div className="desc">{description}</div>
 						</div>
 					</div>

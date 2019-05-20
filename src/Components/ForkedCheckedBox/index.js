@@ -15,7 +15,7 @@ const ForkedCheckedBox = props => {
 				control={
 					<Checkbox
 						checked={checked}
-						onChange={handleChangeForkedCheckedBox("fork")}
+						onChange={handleChangeForkedCheckedBox("IncludeFork")}
 					/>
 				}
 				label={title}
