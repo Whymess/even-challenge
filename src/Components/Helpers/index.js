@@ -1,4 +1,4 @@
-function validate(repoName, lisenceAgreement, range) {
+function validate(repoName, lisenceAgreement, range, stars) {
 	return {
 		lisenceAgreement: lisenceAgreement.length === 0,
 		repoName: repoName.length === 0,

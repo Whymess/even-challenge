@@ -29,6 +29,7 @@ export default class Application extends Component {
 		data: "",
 		errorMessage: "",
 		errors: {
+			ErrorForStars: false,
 			ErrorForRange: false,
 			ErrorForRepoName: false,
 			ErrorForLicenseInput: false
@@ -199,7 +200,7 @@ export default class Application extends Component {
 							<div className="col-lg-6 col-md-6 col-sm-6 mt-1">
 								<Stars
 									onFocus={this.handleOnFocus("ErrorForRange")}
-									error={ErrorForRange}
+									ErrorForRange={ErrorForRange}
 									exact={exact}
 									range={range}
 									atLeast={atLeast}

@@ -18,10 +18,9 @@ export default class StarsInput extends Component {
 			atLeast,
 			range,
 			exact,
-			error,
+			ErrorForRange,
 			onFocus
 		} = this.props;
-
 		return (
 			<div className="form-group mt-2">
 				<div className="col">
@@ -79,7 +78,7 @@ export default class StarsInput extends Component {
 									name="range"
 									className="number-input"
 								/>
-								{error ? (
+								{ErrorForRange ? (
 									<label className="error-text">
 										The range is not correct
 									</label>
@@ -118,6 +117,6 @@ StarsInput.propTypes = {
 	atLeast: PropTypes.string.isRequired,
 	range: PropTypes.array.isRequired,
 	exact: PropTypes.string.isRequired,
-	error: PropTypes.bool.isRequired,
+	ErrorForRange: PropTypes.bool.isRequired,
 	onFocus: PropTypes.func.isRequired
 };

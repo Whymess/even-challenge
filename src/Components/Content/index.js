@@ -5,7 +5,6 @@ import "./index.css";
 
 export default props => {
 	let { license, stargazers_count, description, name, fork } = props;
-	console.log(fork === true);
 	return (
 		<div className="container border mt-4">
 			<div className="row">
